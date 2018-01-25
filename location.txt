@@ -4,7 +4,7 @@ h2. Tables:-
 
 
 *Table Name : location*
-*Table Number : * 
+*Table Number : l1 * 
 *DESCRIPTION : *
 		We are maintaning location table for tracking the merchant if merchatn have multiple location.
 
@@ -28,7 +28,7 @@ I-inactive
 
 
 *Table Name : location_images*
-*Table Number : * 
+*Table Number : l2* 
 *DESCRIPTION : *
 		We are maintaning location_images table for easily board on the merchant location to the customer.
 
