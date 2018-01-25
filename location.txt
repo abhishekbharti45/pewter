@@ -31,12 +31,13 @@ I-inactive
 *Table Number : * 
 *DESCRIPTION : *
 		We are maintaning location_images table for easily board on the merchant location to the customer.
+
 |_. SNO |_. COLUMN NAME |_. DATA TYPE |_. DESCRIPTION |
 | 1 | location_id  | INT (PK),(FK), NOT NULL | Auto increment column |
 | 2 | seq_no | VARCHAR (50), NOT NULL | Auto increment column  |
-| 3 | image_content | VARCHAR (50), NOT NULL |  | 
-| 4 | image_filename | VARCHAR (64) NOT NULL |  |
-| 5 | image_type | DATE, NOT NULL |  |
+| 3 | image_content |  blob, NOT NULL | keep in blob content | 
+| 4 | image_filename | VARCHAR (50), NOT NULL | write name of the image |
+| 5 | image_type | VARCHAR(50), NOT NULL | jpeg,png |
 | 6 | status | VARCHAR (1), NOT NULL | it contains 2 values 
 A- appear
 D- delete
