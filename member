@@ -1,0 +1,72 @@
+h1. Data Model Document
+
+h2. Tables:-
+
+*1.Member*
+It stores the basic information like name, contact information and address.
+It also stores member card information, reward point information, card status and other information.
+The data in this table is accessible to the user to see his basic information along with card information, status of the card, reward points available in the card and etc.
+
+*Table Name : member*
+
+|_. SNO |_. COLUMN NAME |_. DATA TYPE |_. DESCRIPTION |
+| 1 | member_id  | INT (PK), NOT NULL | Auto increment column |
+| 2 | first_nm | VARCHAR (50), NOT NULL | will have first name |
+| 3 | last_nm | VARCHAR (50) | will have last name |
+| 4 | mobile_nbr | VARCHAR (15) NOT NULL UNIQUE | for easy login and immediate contact & must be 10 digits |
+| 5 | email_address | VARCHAR(50), NOT NULL | Email should be captured as username | 
+| 6 | member_address_id | INT (FK) | foreign key to address table|
+| 7 | card_id | INT (FK) | foreign key to card table|
+| 8 | reward_points | INT | will have total reward points, given by the partner |
+| 9 | status | VARCHAR(1) | it contains 4 value
+R- registered
+A- active
+L-locked
+D-delete |
+| 10 | created_by | VARCHAR (50), NOT NULL | Name of the person who created for the member |
+| 11 | created_dt | TIMESTAMP, NOT NULL | On which date and time it has been created |
+| 12 | last_modified_by | VARCHAR (50), NOT NULL | name of the person, who has modified the record for last time |
+| 13 | last_modified_dt | TIMESTAMP, NOT NULL | On which date and time, record has been modified last |
+
+
+*Member Schema Script:-*
+
+use pewterdb;
+
+/* if table exists already, drop table first */
+
+drop table if exists member;
+
+/* script to create table */
+
+create table if not exists member (
+    member_id  integer not null primary key auto_increment,
+    first_nm varchar(50) not null,
+    last_nm varchar(50) not null,
+    mobile_nbr varchar(15) not null unique,
+    email_address varchar(50) not null unique , 
+    member_address_id integer not null,
+    card_id integer not null,
+    reward_points integer not null,
+    status varchar(1) not null,
+    created_by varchar(50) not null,
+    created_dt timestamp not null,
+    last_modified_by varchar(50) not null,
+    last_modified__dt timestamp not null
+);
+
+/* Alter Table Script */
+
+alter table member
+add foreign key (member_address_id)
+references address(address_id);
+
+alter table member
+add foreign key (card_id)
+references card(card_id);
+
+
+/* Seeds and Test Data Script:- */
+
+insert into member (first_nm, last_nm, mobile_nbr, email_address, member_address_id, card_id, reward_points, status, created_by, created_dt, last_modified_by, last_modified_dt) values
+('Sameer', 'Bhatia', '9426548765', 'sameer@gmail.com', 1, 1, 516, 'A', 'Admin', '2018-01-25','Admin', '2018-01-16');
