@@ -1,0 +1,59 @@
+ 1. Overview
+	One can become Partner with Pewter through one-time registration process. They have to provide their basic information along with business related information while registering themselves with Pewter.
+ 2. Description
+	For registration, Merchant has to filll-up 
+ 3. Acronyms
+ 4. Flow Diagram
+ 5. ER Diagram
+ 6. UI Mockups
+ 7. Validation
+	Merchant has to provide valid information about him while the process of registration. He has to provide Valid information for the following fields:-
+	a. Display Name
+		Merchant has to provide name that he want to display to the Pewter card members or customers. Name can have alphabetic characters only and maximum - characters only and should not be left as blank.
+	b. Contact Person Name
+		Merchant has to give the name of the person to contact. Name can have alphabetic characters only and maximum - characters only  and should not be left as blank.
+	c. Contact Number
+		Merchant has to give the contact number of the person. Contact number must be of 10 digits and can contain digits only and should not be left as blank.
+	d. Alternate Contact Number
+		Merchant has to give the name of the alternate person to contact. Name can have alphabetic characters only and maximum - characters only  and should not be left as blank.
+	e. Alternate Person Name
+		Merchant has to give the contact number of the alternate person. Contact number must be of 10 digits and can contain digits only.
+	f. Email Address
+		Merchant has to give the email address of his firm to contact. An email address can have alphanumeric characters and underscore(_) and dot (.) only and should not be left as blank.
+	g. Alternate Email Address
+		Merchant has to give the alternate email address of his firm to contact. An email address can have alphanumeric characters and underscore(_) and dot (.) only.
+	h. Firm Name
+		Merchant has to provide his firm name during the registration process. Firm name can have alphabetic characters only and maximum - characters only.
+	i. Firm Registration Number
+		Merchant has to provide his firm registration number name during the registration process. Name can have alphanumeric characters only and should not be left as blank.
+	j. Firm logo
+		Merchant has to provide a logo representing his firm. A logo can be of .jpeg, .jpg or .png format and shoul not be exceeds to -- kb/mb and should not be left as blank.
+	j. Branch
+		Merchant has to number of branches, he has under his firm. This can be numeric only.
+	k. Communication Address
+		Merchant has to provide a valid communication address to contact. An address can have alphanumeric characters and special characters also and should not be left as blank.
+	l. Secondary Communication Address
+		Merchant has to provide a valid secondary communication address to contact. An address can have alphanumeric characters and special characters also.
+	m. Terms and Conditions
+		Merchant has to accept the Terms and Conditions. That can not be left as non-selected.
+ 8. Field
+	Merchant has to provide following information during registration process: 
+	a. Display Name
+	b. Contact Person Name
+	c. Contact Number
+	d. Alternate Contact Number
+	e. Alternate Person Name
+	f. Email Address
+	g. Alternate Email Address
+	h. Firm Name
+	i. Firm Registration Number
+	j. Branch
+	k. Communication Address
+	l. Secondary Communication Address
+	m. Terms and Conditions
+	
+ 9. System
+ 10. Class Diagram
+ 11. Sequence
+ 12. Queries
+ 13. Clarication
